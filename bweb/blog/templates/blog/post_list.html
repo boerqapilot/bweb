@@ -6,17 +6,14 @@
         <div>
             <h1><a href="/">Boerqa Web Blog</a></h1>
         </div>
-
         <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Stadig maar seker</a></h2>
-            <p>Dinge moet bygelas word, 'n sensor, 'n tabel, 'n grafiek...</p>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Tweede Gedagtes</a></h2>
-            <p>Op tweede gedagte, dinge moet nog eers mooi geskryf word. Geskryf in tale wat ons nog nie so goed ken nie. So ja, dit gaan stadig maar dit gaan virseeker. Lekker dag.</p>
+            {% for post in posts %}
+                <div>
+                    <p>published: {{ post.published_date }}</p>
+                    <h2><a href="">{{ post.title }}</a></h2>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
         </div>
     </body>
 </html>
