@@ -1,6 +1,6 @@
 .page-header {
     background-color: #000000;
-    margin-top: 0;
+    margin-top: 10;
     padding: 25px 25px 25px 50px;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .content {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 h1, h2, h3, h4 {
